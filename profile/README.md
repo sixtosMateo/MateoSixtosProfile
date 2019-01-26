@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### External library/ frameworks
+
+  $ npm install antd --save
+
+Set this to top of the Layout file for css styling
+  $ import 'antd/dist/antd.css';
