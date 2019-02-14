@@ -47,7 +47,7 @@ class CustomLayout extends React.Component {
               <SubMenu key="sub3" title={<span><Icon type="notification" />Hackathons</span>}>
                 <Menu.Item key="10">API First Hackathon</Menu.Item>
                 <Menu.Item key="11">API World Hackathon</Menu.Item>
-                <Menu.Item key="12">Fashion Hackathon</Menu.Item>
+                <Menu.Item key="12"><Link to="/fashion">Fashion Hackathon</Link></Menu.Item>
                 <Menu.Item key="13"><Link to="/tomorrow">Hack Your Tomorrow</Link></Menu.Item>
               </SubMenu>
             </Menu>

@@ -7,6 +7,7 @@ import Capital from './components/Capital';
 import BusinessDock from './components/Business';
 import Ecommerce from './components/Ecommerce';
 import Tomorrow from './components/Tomorrow';
+import Fashion from './components/Fashion';
 
 const BaseRouter = () =>(
   <div className="routes-div">
@@ -17,6 +18,7 @@ const BaseRouter = () =>(
     <Route exact path='/ecommerce' component={Ecommerce}/>{" "}
     <Route exact path='/businessDock' component={BusinessDock}/>{" "}
     <Route exact path='/tomorrow' component={Tomorrow}/>{" "}
+    <Route exact path='/fashion' component={Fashion}/>{" "}
   </div>
 
 );
