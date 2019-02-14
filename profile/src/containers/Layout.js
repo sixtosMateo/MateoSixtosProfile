@@ -55,7 +55,7 @@ class CustomLayout extends React.Component {
           <Layout style={{ padding: '0 24px 24px' }}>
             /*{Breadcrumb}*/
             <Content style={{
-              background: '#fff', padding: 24, margin: 0, minHeight: 280,
+              background: '#fff', padding: 15, margin: 0, minHeight: 280,
             }}
             >
               { this.props.children }
