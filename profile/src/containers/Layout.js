@@ -20,8 +20,8 @@ class CustomLayout extends React.Component {
             defaultSelectedKeys={['1']}
             style={{ lineHeight: '64px' }}
           >
-            <Menu.Item key="1">About Me</Menu.Item>
-            <Menu.Item key="2">Work</Menu.Item>
+            <Menu.Item key="1"><Link to="/">About Me</Link></Menu.Item>
+            <Menu.Item key="2"><Link to="/Karis">Work</Link></Menu.Item>
             <Menu.Item key="3">Resume</Menu.Item>
           </Menu>
         </Header>
@@ -35,25 +35,25 @@ class CustomLayout extends React.Component {
               style={{ height: '100%', borderRight: 0 }}
             >
               <SubMenu key="sub1" title={<span><Icon type="user" />Experiences</span>}>
-                <Menu.Item key="1">Karis Toys</Menu.Item>
-                <Menu.Item key="2">nLightn Technologies</Menu.Item>
-                <Menu.Item key="3">Capital Insurance Group</Menu.Item>
+                <Menu.Item key="1"><Link to="/karis">Karis Toys</Link></Menu.Item>
+                <Menu.Item key="2"><Link to="/nlightn">nLightn Technologies</Link></Menu.Item>
+                <Menu.Item key="3"><Link to="/capital">Capital Insurance Group</Link></Menu.Item>
               </SubMenu>
               <SubMenu key="sub2" title={<span><Icon type="laptop" />Projects</span>}>
-                <Menu.Item key="5">Phone E-commerce</Menu.Item>
-                <Menu.Item key="6">BusinessDock</Menu.Item>
+                <Menu.Item key="5"><Link to="/ecommerce">Phone E-commerce</Link></Menu.Item>
+                <Menu.Item key="6"><Link to="/businessDock">BusinessDock</Link></Menu.Item>
                 <Menu.Item key="7">Restaurant Menu App</Menu.Item>
               </SubMenu>
               <SubMenu key="sub3" title={<span><Icon type="notification" />Hackathons</span>}>
                 <Menu.Item key="10">API First Hackathon</Menu.Item>
                 <Menu.Item key="11">API World Hackathon</Menu.Item>
                 <Menu.Item key="12">Fashion Hackathon</Menu.Item>
-                <Menu.Item key="13">Hack Your Tomorrow (2017</Menu.Item>
+                <Menu.Item key="13"><Link to="/tomorrow">Hack Your Tomorrow</Link></Menu.Item>
               </SubMenu>
             </Menu>
           </Sider>
           <Layout style={{ padding: '0 24px 24px' }}>
-            
+
             <Content style={{
               background: '#fff', padding: 15, margin: 0, minHeight: 280,
             }}

@@ -6,11 +6,17 @@ import Nlightn from './components/NlightN';
 import Capital from './components/Capital';
 import BusinessDock from './components/Business';
 import Ecommerce from './components/Ecommerce';
+import Tomorrow from './components/Tomorrow';
 
 const BaseRouter = () =>(
   <div className="routes-div">
-    <Route exact path='/' component={BusinessDock}/>{" "}
-
+    <Route exact path='/' component={About}/>{" "}
+    <Route exact path='/karis' component={Karis}/>{" "}
+    <Route exact path='/nlightn' component={Nlightn}/>{" "}
+    <Route exact path='/capital' component={Capital}/>{" "}
+    <Route exact path='/ecommerce' component={Ecommerce}/>{" "}
+    <Route exact path='/businessDock' component={BusinessDock}/>{" "}
+    <Route exact path='/tomorrow' component={Tomorrow}/>{" "}
   </div>
 
 );
