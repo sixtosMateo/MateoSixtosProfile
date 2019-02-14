@@ -7,7 +7,7 @@ import Capital from './components/Capital';
 
 const BaseRouter = () =>(
   <div className="routes-div">
-    <Route exact path='/' component={Capital}/>{" "}
+    <Route exact path='/' component={About}/>{" "}
 
   </div>
 
