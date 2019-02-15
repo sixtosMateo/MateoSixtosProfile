@@ -9,6 +9,7 @@ import Ecommerce from './components/Ecommerce';
 import Tomorrow from './components/Tomorrow';
 import Fashion from './components/Fashion';
 import Geocash from './components/Geocash';
+import First from './components/First';
 
 const BaseRouter = () =>(
   <div className="routes-div">
@@ -21,6 +22,7 @@ const BaseRouter = () =>(
     <Route exact path='/tomorrow' component={Tomorrow}/>{" "}
     <Route exact path='/fashion' component={Fashion}/>{" "}
     <Route exact path='/geocash' component={Geocash}/>{" "}
+    <Route exact path='/first' component={First}/>{" "}
   </div>
 
 );
