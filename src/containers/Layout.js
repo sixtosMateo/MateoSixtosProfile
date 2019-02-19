@@ -9,6 +9,14 @@ const { Header, Content, Sider, Footer } = Layout;
 
 
 class CustomLayout extends React.Component {
+  state = {
+    collapsed: false,
+  };
+  onCollapse = (collapsed) => {
+    console.log(collapsed);
+    this.setState({ collapsed });
+  }
+
   render() {
     return (
       <Layout style={{}}>
@@ -27,12 +35,17 @@ class CustomLayout extends React.Component {
         </Header>
 
         <Layout>
-          <Sider width={200} style={{ background: '#fff' }}>
+
+
+          <Sider
+            collapsedWidth="0"
+            breakpoint="sm"
+            style={{ background: '#fff' }}>
             <Menu
-              mode="inline"
               defaultSelectedKeys={['1']}
               defaultOpenKeys={['sub1']}
-              style={{ height: '100%', borderRight: 0 }}
+               mode="inline"
+              style={{ height: '100%', borderRight: 0}}
             >
               <SubMenu key="sub1" title={<span><Icon type="user" />Experiences</span>}>
                 <Menu.Item key="1"><Link to="/karis">Karis Toys</Link></Menu.Item>
@@ -52,6 +65,9 @@ class CustomLayout extends React.Component {
               </SubMenu>
             </Menu>
           </Sider>
+
+
+
           <Layout style={{ padding: '0 24px 24px' }}>
 
             <Content style={{
