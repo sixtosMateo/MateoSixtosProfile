@@ -71,10 +71,10 @@ class CustomLayout extends React.Component {
             <Col xs={12} sm={10} md={6} lg={6}  style={{ height: "150px"}}>
               <div className="visitor-navigation" style={{color:"#C0C0C0"}}>
                 <div><h3 style={{color:"#C0C0C0"}}>Navigate: </h3></div>
-                <div><Link to="/">Overview</Link></div>
-                <div><Link to="/">Demo</Link></div>
-                <div><Link to="/">Clients</Link></div>
-                <div><Link to="/">Developer</Link></div>
+                <div><Link to="/">About</Link></div>
+                <div><Link to="/karis">Experience</Link></div>
+                <div><Link to="/resume">Resume</Link></div>
+                <div><Link to="/first">Hackathons</Link></div>
               </div>
             </Col>
 
