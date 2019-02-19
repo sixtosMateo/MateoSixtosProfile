@@ -21,8 +21,8 @@ class CustomLayout extends React.Component {
             style={{ lineHeight: '64px' }}
           >
             <Menu.Item key="1"><Link to="/">About Me</Link></Menu.Item>
-            <Menu.Item key="2"><Link to="/Karis">Work</Link></Menu.Item>
-            <Menu.Item key="3">Resume</Menu.Item>
+            <Menu.Item key="2"><Link to="/karis">Work</Link></Menu.Item>
+            <Menu.Item key="3"><Link to="/resume">Resume</Link></Menu.Item>
           </Menu>
         </Header>
 
@@ -42,7 +42,7 @@ class CustomLayout extends React.Component {
               <SubMenu key="sub2" title={<span><Icon type="laptop" />Projects</span>}>
                 <Menu.Item key="5"><Link to="/ecommerce">Phone E-commerce</Link></Menu.Item>
                 <Menu.Item key="6"><Link to="/businessDock">BusinessDock</Link></Menu.Item>
-                <Menu.Item key="7">Restaurant Menu App</Menu.Item>
+                <Menu.Item key="7"><Link to="/restaurant">Restaurant Menu App</Link></Menu.Item>
               </SubMenu>
               <SubMenu key="sub3" title={<span><Icon type="notification" />Hackathons</span>}>
                 <Menu.Item key="10"><Link to="/first">API First Hackathon</Link></Menu.Item>

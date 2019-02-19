@@ -71,6 +71,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### External library/ frameworks
 
   $ npm install antd --save
+  $ npm install react-pdf
 
 Set this to top of the Layout file for css styling
   $ import 'antd/dist/antd.css';

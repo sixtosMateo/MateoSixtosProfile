@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CustomLayout from './containers/Layout';
 import { BrowserRouter as Router } from 'react-router-dom';
 import BaseRouter from './Routes';
-
+import './App.css';
 class App extends Component {
   render() {
     return (
